@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Dataflow",
+    "displayName": "Pick A Part"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "be20c70d-5276-baec-4d04-ea347f585a8e"
+  }
+}

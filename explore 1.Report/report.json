@@ -1,0 +1,87 @@
+{
+  "config": "{\"version\":\"5.66\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"type\":2,\"version\":{\"visual\":\"1.8.95\",\"report\":\"2.0.95\",\"page\":\"1.3.95\"}}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"d7ff9c732b17dff6ec51\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"vehicles_with_parts2\"}},\"Property\":\"make_model\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}},{\"name\":\"d95773ae27710fdf78a5\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"vehicles_with_parts2\"}},\"Property\":\"transmission\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}},{\"name\":\"f1d0cacce1fe2f6e42bf\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"vehicles_with_parts2\"}},\"Property\":\"yard\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+      "height": 720.00,
+      "name": "446ef76b8c2b8732af79",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"3db62e2bc6f909d34dd4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":942.6678129753323,\"y\":0,\"z\":4000,\"width\":314.22260432511075,\"height\":153.49954808985296,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"vehicles_with_parts2.Vehicle count\"}],\"Rows\":[{\"queryRef\":\"vehicles_with_parts2.engine\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vehicles_with_parts2\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Vehicle count\"},\"Name\":\"vehicles_with_parts2.Vehicle count\",\"NativeReferenceName\":\"Vehicle count\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"engine\"},\"Name\":\"vehicles_with_parts2.engine\",\"NativeReferenceName\":\"engine\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Vehicle count\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnFormatting\":[{\"properties\":{\"dataBars\":{\"positiveColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#efb5b9'\"}}}}},\"negativeColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'minColor'\"}}}}},\"axisColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'foreground'\"}}}}},\"reverseDirection\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"hideText\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"totalMatchingOption\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}}}},\"selector\":{\"metadata\":\"vehicles_with_parts2.Vehicle count\"}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"185.08065818667563D\"}}}},\"selector\":{\"metadata\":\"vehicles_with_parts2.engine\"}}],\"subTotals\":[{\"properties\":{\"rowSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 153.50,
+          "width": 314.22,
+          "x": 942.67,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"55f8efc49be19b8287ff\",\"layouts\":[{\"id\":0,\"position\":{\"x\":680.8156427044066,\"y\":0,\"z\":3000,\"width\":199.54941251680884,\"height\":325.05786654321804,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"vehicles_with_parts2.Vehicle count\"}],\"Rows\":[{\"queryRef\":\"vehicles_with_parts2.arrival_date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vehicles_with_parts2\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Vehicle count\"},\"Name\":\"vehicles_with_parts2.Vehicle count\",\"NativeReferenceName\":\"Vehicle count\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"arrival_date\"},\"Name\":\"vehicles_with_parts2.arrival_date\",\"NativeReferenceName\":\"arrival_date\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"arrival_date\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnFormatting\":[{\"properties\":{\"dataBars\":{\"positiveColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#efb5b9'\"}}}}},\"negativeColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'minColor'\"}}}}},\"axisColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'foreground'\"}}}}},\"reverseDirection\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"hideText\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"totalMatchingOption\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}}}},\"selector\":{\"metadata\":\"vehicles_with_parts2.Vehicle count\"}}],\"subTotals\":[{\"properties\":{\"rowSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 325.06,
+          "width": 199.55,
+          "x": 680.82,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"7a0a8f94d7c25dd725f5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":286.231510261667,\"y\":0,\"z\":2000,\"width\":371.1077309701739,\"height\":325.05786654321804,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"vehicles_with_parts2.Vehicle count\"}],\"Rows\":[{\"queryRef\":\"vehicles_with_parts2.make_model\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vehicles_with_parts2\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Vehicle count\"},\"Name\":\"vehicles_with_parts2.Vehicle count\",\"NativeReferenceName\":\"Vehicle count\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"make_model\"},\"Name\":\"vehicles_with_parts2.make_model\",\"NativeReferenceName\":\"make_model\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Vehicle count\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnFormatting\":[{\"properties\":{\"dataBars\":{\"positiveColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#efb5b9'\"}}}}},\"negativeColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'minColor'\"}}}}},\"axisColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'foreground'\"}}}}},\"reverseDirection\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"hideText\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"totalMatchingOption\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}}}},\"selector\":{\"metadata\":\"vehicles_with_parts2.Vehicle count\"}}],\"subTotals\":[{\"properties\":{\"rowSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 325.06,
+          "width": 371.11,
+          "x": 286.23,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"8a29e57f80e9d8d675e9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":342.2136983885545,\"z\":0,\"width\":1280.3668187730088,\"height\":377.42830059740317,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"vehicles_with_parts2.vehicle_id\"},{\"queryRef\":\"vehicles_with_parts2.acq\"},{\"queryRef\":\"vehicles_with_parts2.arrival_date\"},{\"queryRef\":\"vehicles_with_parts2.engine\"},{\"queryRef\":\"vehicles_with_parts2.make_model\"},{\"queryRef\":\"Sum(vehicles_with_parts2.odometer)\"},{\"queryRef\":\"vehicles_with_parts2.part_name\"},{\"queryRef\":\"vehicles_with_parts2.scrape_run_id\"},{\"queryRef\":\"vehicles_with_parts2.scraped_at\"},{\"queryRef\":\"vehicles_with_parts2.scraped_at_date\"},{\"queryRef\":\"vehicles_with_parts2.transmission\"},{\"queryRef\":\"vehicles_with_parts2.yard\"},{\"queryRef\":\"vehicles_with_parts2.yard_location\"},{\"queryRef\":\"Sum(vehicles_with_parts2.year)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vehicles_with_parts2\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"acq\"},\"Name\":\"vehicles_with_parts2.acq\",\"NativeReferenceName\":\"acq\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"arrival_date\"},\"Name\":\"vehicles_with_parts2.arrival_date\",\"NativeReferenceName\":\"arrival_date\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"engine\"},\"Name\":\"vehicles_with_parts2.engine\",\"NativeReferenceName\":\"engine\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"make_model\"},\"Name\":\"vehicles_with_parts2.make_model\",\"NativeReferenceName\":\"make_model\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"odometer\"},\"Name\":\"Sum(vehicles_with_parts2.odometer)\",\"NativeReferenceName\":\"odometer\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"part_name\"},\"Name\":\"vehicles_with_parts2.part_name\",\"NativeReferenceName\":\"part_name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"scrape_run_id\"},\"Name\":\"vehicles_with_parts2.scrape_run_id\",\"NativeReferenceName\":\"scrape_run_id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"scraped_at\"},\"Name\":\"vehicles_with_parts2.scraped_at\",\"NativeReferenceName\":\"scraped_at\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"scraped_at_date\"},\"Name\":\"vehicles_with_parts2.scraped_at_date\",\"NativeReferenceName\":\"scraped_at_date\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"transmission\"},\"Name\":\"vehicles_with_parts2.transmission\",\"NativeReferenceName\":\"transmission\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"vehicle_id\"},\"Name\":\"vehicles_with_parts2.vehicle_id\",\"NativeReferenceName\":\"vehicle_id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"yard\"},\"Name\":\"vehicles_with_parts2.yard\",\"NativeReferenceName\":\"yard\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"yard_location\"},\"Name\":\"vehicles_with_parts2.yard_location\",\"NativeReferenceName\":\"yard_location\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"year\"}},\"Function\":0},\"Name\":\"Sum(vehicles_with_parts2.year)\",\"NativeReferenceName\":\"Sum of year\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"arrival_date\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"values\":[{\"properties\":{\"webURL\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"vehicles_with_parts2\"}},\"Property\":\"url\"}},\"Function\":3}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"vehicles_with_parts2.make_model\"}}]}}}",
+          "filters": "[]",
+          "height": 377.43,
+          "width": 1280.37,
+          "x": 0.00,
+          "y": 342.21,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"a11034c3aa270dbc9e80\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1000,\"width\":274.4933095253841,\"height\":334.9901902431497,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"vehicles_with_parts2.Vehicle count\"}],\"Rows\":[{\"queryRef\":\"vehicles_with_parts2.part_name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vehicles_with_parts2\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Vehicle count\"},\"Name\":\"vehicles_with_parts2.Vehicle count\",\"NativeReferenceName\":\"Vehicle count\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"part_name\"},\"Name\":\"vehicles_with_parts2.part_name\",\"NativeReferenceName\":\"part_name\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"part_name\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"155.2618006195036D\"}}}},\"selector\":{\"metadata\":\"vehicles_with_parts2.part_name\"}}],\"columnFormatting\":[{\"properties\":{\"dataBars\":{\"positiveColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#efb5b9'\"}}}}},\"negativeColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'minColor'\"}}}}},\"axisColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'foreground'\"}}}}},\"reverseDirection\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"hideText\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"totalMatchingOption\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}}}},\"selector\":{\"metadata\":\"vehicles_with_parts2.Vehicle count\"}}]}}}",
+          "filters": "[]",
+          "height": 334.99,
+          "width": 274.49,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"a7f34d18846f75de06d0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":943.5707514935079,\"y\":139.05253179904327,\"z\":5000,\"width\":314.22260432511075,\"height\":176.9759495624187,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"vehicles_with_parts2.Vehicle count\"}],\"Rows\":[{\"queryRef\":\"vehicles_with_parts2.yard\",\"active\":true},{\"queryRef\":\"vehicles_with_parts2.yard_location\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vehicles_with_parts2\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Vehicle count\"},\"Name\":\"vehicles_with_parts2.Vehicle count\",\"NativeReferenceName\":\"Vehicle count\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"yard\"},\"Name\":\"vehicles_with_parts2.yard\",\"NativeReferenceName\":\"yard\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"yard_location\"},\"Name\":\"vehicles_with_parts2.yard_location\",\"NativeReferenceName\":\"yard_location\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Vehicle count\"}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"vehicles_with_parts2.yard\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"vehicles_with_parts2\"}},\"Property\":\"yard\"}}],\"isPinned\":true},{\"queryRefs\":[\"vehicles_with_parts2.yard_location\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"columnFormatting\":[{\"properties\":{\"dataBars\":{\"positiveColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#efb5b9'\"}}}}},\"negativeColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'minColor'\"}}}}},\"axisColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'foreground'\"}}}}},\"reverseDirection\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"hideText\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"totalMatchingOption\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}}}},\"selector\":{\"metadata\":\"vehicles_with_parts2.Vehicle count\"}}],\"subTotals\":[{\"properties\":{\"columnSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"rowSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"114.25289995361256D\"}}}},\"selector\":{\"metadata\":\"vehicles_with_parts2.yard\"}}]}}}",
+          "filters": "[]",
+          "height": 176.98,
+          "width": 314.22,
+          "x": 943.57,
+          "y": 139.05,
+          "z": 5000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

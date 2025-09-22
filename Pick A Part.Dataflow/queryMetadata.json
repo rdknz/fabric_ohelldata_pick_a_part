@@ -1,0 +1,65 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {},
+  "name": "Pick A Part",
+  "queryGroups": [
+    {
+      "id": "ee631810-a7ce-4731-a3c6-64ce315b9a4f",
+      "name": "Transform file from raw"
+    },
+    {
+      "id": "c9e6096d-4110-44ed-9365-cbbce90c3141",
+      "name": "Helper queries",
+      "parentId": "ee631810-a7ce-4731-a3c6-64ce315b9a4f"
+    }
+  ],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "raw": {
+      "queryId": "1295fa7b-69e2-4f9b-8d18-b0ee65161e3e",
+      "queryName": "raw"
+    },
+    "Sample file": {
+      "queryId": "610f9fbc-736c-4456-958a-02228667847e",
+      "queryName": "Sample file",
+      "queryGroupId": "c9e6096d-4110-44ed-9365-cbbce90c3141",
+      "loadEnabled": false
+    },
+    "Parameter": {
+      "queryId": "9b5c7099-0892-43e4-99a1-c2656b16d9b1",
+      "queryName": "Parameter",
+      "queryGroupId": "c9e6096d-4110-44ed-9365-cbbce90c3141",
+      "loadEnabled": false
+    },
+    "Transform Sample file": {
+      "queryId": "0cadc5ee-b95c-43f3-bd56-46ac3b23306d",
+      "queryName": "Transform Sample file",
+      "queryGroupId": "ee631810-a7ce-4731-a3c6-64ce315b9a4f",
+      "loadEnabled": false
+    },
+    "Transform file": {
+      "queryId": "6d01cfb0-6853-43da-9f3e-9d37e0da75bd",
+      "queryName": "Transform file",
+      "queryGroupId": "c9e6096d-4110-44ed-9365-cbbce90c3141",
+      "loadEnabled": false
+    },
+    "raw_DataDestination": {
+      "queryId": "17df20c6-6fd0-47e2-8bf3-22af85a2e58f",
+      "queryName": "raw_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"3b73998f-87fd-49d2-8f03-c5b036b89728\",\"DatasourceId\":\"6c21674e-bd07-4a2d-bc82-ec6a85f65f47\"}"
+    },
+    {
+      "path": "Warehouse",
+      "kind": "Warehouse",
+      "connectionId": "{\"ClusterId\":\"3b73998f-87fd-49d2-8f03-c5b036b89728\",\"DatasourceId\":\"2df459bb-fa10-487f-8015-2ba11ed6ee2e\"}"
+    }
+  ]
+}

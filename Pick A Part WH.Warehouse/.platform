@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Warehouse",
+    "displayName": "Pick A Part WH"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "c1680a39-82e3-9028-4f2f-6a4a418ef95c"
+  }
+}

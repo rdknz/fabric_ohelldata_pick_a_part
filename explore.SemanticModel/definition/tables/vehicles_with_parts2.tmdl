@@ -1,0 +1,210 @@
+table vehicles_with_parts2
+	lineageTag: f0f23274-6b92-4fdd-b94c-bd3c1342d75d
+	sourceLineageTag: [raw].[vehicles_with_parts2]
+
+	measure 'Vehicle count' = DISTINCTCOUNT(vehicles_with_parts2[vehicle_id])
+		formatString: #,0
+		lineageTag: 2ef0f3da-2f89-4b1d-9d59-bdadc0c47714
+
+		changedProperty = Name
+
+		changedProperty = FormatString
+
+	column vehicle_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 05ea0e95-1823-41cb-9223-3375f51f0223
+		sourceLineageTag: vehicle_id
+		summarizeBy: none
+		sourceColumn: vehicle_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column yard
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: da0f03f9-a1ed-4686-86fb-de61e5c37ff4
+		sourceLineageTag: yard
+		summarizeBy: none
+		sourceColumn: yard
+
+		annotation SummarizationSetBy = Automatic
+
+	column series_url
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 67da6a85-2698-4cfc-b3d6-eee83b9de554
+		sourceLineageTag: series_url
+		dataCategory: WebUrl
+		summarizeBy: none
+		sourceColumn: series_url
+
+		changedProperty = DataCategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column url
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 94783ac1-bff4-40ed-8529-1b56d913ca2e
+		sourceLineageTag: url
+		dataCategory: WebUrl
+		summarizeBy: none
+		sourceColumn: url
+
+		changedProperty = DataCategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column scrape_run_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 800724dd-ec6c-4207-9562-ebccf8c6a8a7
+		sourceLineageTag: scrape_run_id
+		summarizeBy: none
+		sourceColumn: scrape_run_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column vehicle_ref
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4afc811e-7979-4186-80df-635e69bf6b6d
+		sourceLineageTag: vehicle_ref
+		summarizeBy: none
+		sourceColumn: vehicle_ref
+
+		annotation SummarizationSetBy = Automatic
+
+	column acq
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2a6c7c7e-eacc-4b35-883e-1fe2d4d4f7a4
+		sourceLineageTag: acq
+		summarizeBy: none
+		sourceColumn: acq
+
+		annotation SummarizationSetBy = Automatic
+
+	column yard_location
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5d5165da-6b27-4994-9b12-a2e754d07580
+		sourceLineageTag: yard_location
+		summarizeBy: none
+		sourceColumn: yard_location
+
+		annotation SummarizationSetBy = Automatic
+
+	column make_model
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 7ebf764a-b0a0-4c1d-b5ef-b65dbd78934a
+		sourceLineageTag: make_model
+		summarizeBy: none
+		sourceColumn: make_model
+
+		annotation SummarizationSetBy = Automatic
+
+	column engine
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: dd8a48d5-1697-4266-a13e-38f6ebfacf0d
+		sourceLineageTag: engine
+		summarizeBy: none
+		sourceColumn: engine
+
+		annotation SummarizationSetBy = Automatic
+
+	column transmission
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f54930ba-bcfd-4e68-8996-5f0626806d69
+		sourceLineageTag: transmission
+		summarizeBy: none
+		sourceColumn: transmission
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 7a6f1b9a-bf2c-4c9e-bfdd-a89e5d773990
+		sourceLineageTag: year
+		summarizeBy: none
+		sourceColumn: year
+
+		changedProperty = SummarizeBy
+
+		annotation SummarizationSetBy = User
+
+	column odometer
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: bcfae78a-beee-47ff-a646-7fd7c9736b0d
+		sourceLineageTag: odometer
+		summarizeBy: none
+		sourceColumn: odometer
+
+		changedProperty = SummarizeBy
+
+		annotation SummarizationSetBy = User
+
+	column arrival_date
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		sourceProviderType: date
+		lineageTag: 85b725b9-1a6f-4335-84b4-7fb15959c634
+		sourceLineageTag: arrival_date
+		summarizeBy: none
+		sourceColumn: arrival_date
+
+		changedProperty = FormatString
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	column scraped_at
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 448fbad1-780a-4426-a8d0-d1fea4bce44e
+		sourceLineageTag: scraped_at
+		summarizeBy: none
+		sourceColumn: scraped_at
+
+		annotation SummarizationSetBy = Automatic
+
+	column scraped_at_date
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: fc784a04-f330-4aee-9381-bf03774c5abd
+		sourceLineageTag: scraped_at_date
+		summarizeBy: none
+		sourceColumn: scraped_at_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column part_name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 15309b58-ff55-4cd5-8eb7-c2b450aeabac
+		sourceLineageTag: part_name
+		summarizeBy: none
+		sourceColumn: part_name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vehicles_with_parts2 = entity
+		mode: directLake
+		source
+			entityName: vehicles_with_parts2
+			schemaName: raw
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+
