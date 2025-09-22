@@ -1,0 +1,188 @@
+table vehicles_with_parts
+	lineageTag: 492754a5-5f8d-4005-a799-84a1e756fe33
+	sourceLineageTag: [dbo].[vehicles_with_parts]
+
+	column vehicle_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1da1ac9a-5e15-4b49-a7da-beaa729796cb
+		sourceLineageTag: vehicle_id
+		summarizeBy: none
+		sourceColumn: vehicle_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column yard
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 01e7044e-d71d-4b4b-b93e-615be63fc7f9
+		sourceLineageTag: yard
+		summarizeBy: none
+		sourceColumn: yard
+
+		annotation SummarizationSetBy = Automatic
+
+	column series_url
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 817b0580-7f51-4c65-aeae-11ff76a299c5
+		sourceLineageTag: series_url
+		summarizeBy: none
+		sourceColumn: series_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column url
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3c31020d-8465-4181-81c3-cb5923b9d252
+		sourceLineageTag: url
+		summarizeBy: none
+		sourceColumn: url
+
+		annotation SummarizationSetBy = Automatic
+
+	column scrape_run_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 28c0bd7a-18c4-46f4-aabc-367565d9204d
+		sourceLineageTag: scrape_run_id
+		summarizeBy: none
+		sourceColumn: scrape_run_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column vehicle_ref
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8e8e3142-4807-4ca3-a77a-e0295826a771
+		sourceLineageTag: vehicle_ref
+		summarizeBy: none
+		sourceColumn: vehicle_ref
+
+		annotation SummarizationSetBy = Automatic
+
+	column acq
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c13a1fda-80be-4b59-81ab-24c4bf323611
+		sourceLineageTag: acq
+		summarizeBy: none
+		sourceColumn: acq
+
+		annotation SummarizationSetBy = Automatic
+
+	column yard_location
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8ef44060-a959-46d4-94d0-1d8591b7f2e0
+		sourceLineageTag: yard_location
+		summarizeBy: none
+		sourceColumn: yard_location
+
+		annotation SummarizationSetBy = Automatic
+
+	column make_model
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 7ee61c15-b681-4c79-b3d1-4dc69659c902
+		sourceLineageTag: make_model
+		summarizeBy: none
+		sourceColumn: make_model
+
+		annotation SummarizationSetBy = Automatic
+
+	column engine
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 34469223-4cad-4fea-a253-2b8d436a0137
+		sourceLineageTag: engine
+		summarizeBy: none
+		sourceColumn: engine
+
+		annotation SummarizationSetBy = Automatic
+
+	column transmission
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: d005a62a-70f6-403a-a7e6-fa7f94f47f03
+		sourceLineageTag: transmission
+		summarizeBy: none
+		sourceColumn: transmission
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 476abefd-c124-4557-b28e-0804b9c58bf6
+		sourceLineageTag: year
+		summarizeBy: sum
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column odometer
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 9ab6d206-b835-4699-b694-1364f9a6f1eb
+		sourceLineageTag: odometer
+		summarizeBy: sum
+		sourceColumn: odometer
+
+		annotation SummarizationSetBy = Automatic
+
+	column arrival_date
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 08ec2b33-7397-4d8a-b23e-7faf7b281498
+		sourceLineageTag: arrival_date
+		summarizeBy: none
+		sourceColumn: arrival_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column scraped_at
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 7901c8c7-4c34-49e9-bd99-60fc708dfaa1
+		sourceLineageTag: scraped_at
+		summarizeBy: none
+		sourceColumn: scraped_at
+
+		annotation SummarizationSetBy = Automatic
+
+	column scraped_at_date
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 3a5b3069-c0da-4a85-b4cb-739f772de5c7
+		sourceLineageTag: scraped_at_date
+		summarizeBy: none
+		sourceColumn: scraped_at_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column part_name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 04a6c9b8-8a7e-4c0a-b9a4-ba3ba868cfda
+		sourceLineageTag: part_name
+		summarizeBy: none
+		sourceColumn: part_name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vehicles_with_parts = entity
+		mode: directLake
+		source
+			entityName: vehicles_with_parts
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+
