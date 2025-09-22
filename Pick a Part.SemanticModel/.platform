@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Pick a Part"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "3691e8be-c603-9719-40ee-d585518cfe2a"
+  }
+}

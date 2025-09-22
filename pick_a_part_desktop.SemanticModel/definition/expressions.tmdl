@@ -1,0 +1,9 @@
+expression 'DirectLake - pick_a_part' =
+		let
+		    Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/0cd3d9a9-0414-44eb-91ad-5516f97df911/a743e7da-a128-4060-a81f-4d6844a04abd", [HierarchicalNavigation=true])
+		in
+		    Source
+	lineageTag: c52df65b-d1d3-4c72-83bc-1554c58c4f19
+
+	annotation PBI_IncludeFutureArtifacts = False
+

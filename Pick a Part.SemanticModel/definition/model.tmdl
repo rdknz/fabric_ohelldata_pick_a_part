@@ -1,0 +1,22 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-NZ
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["vehicles_with_parts"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.146.1254.0 (25.08)+791a7518fadc83da883d79322a2658aff57c8db3
+
+ref table vehicles_with_parts
+ref table DateTableTemplate_65817f9a-61dc-4e30-9316-8c5ffc97f8f7
+ref table LocalDateTable_81aaf2f1-458a-4f42-afe7-3462ea163b1e
+ref table LocalDateTable_84ba106b-6534-4bd6-934d-405d94da18e8
+ref table LocalDateTable_936e313a-be66-45a0-9626-6d73153e0b3a
+
+ref cultureInfo en-US
+

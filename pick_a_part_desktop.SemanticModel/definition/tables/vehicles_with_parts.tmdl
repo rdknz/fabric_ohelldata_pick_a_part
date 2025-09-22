@@ -1,0 +1,168 @@
+table vehicles_with_parts
+	lineageTag: 52f6b734-8fb8-497e-ad04-0d8b6fddb80b
+	sourceLineageTag: [dbo].[vehicles_with_parts]
+
+	column vehicle_id
+		dataType: string
+		lineageTag: 96f642f9-af76-4497-97ad-9b37195bfc5c
+		sourceLineageTag: vehicle_id
+		summarizeBy: none
+		sourceColumn: vehicle_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column yard
+		dataType: string
+		lineageTag: b3fb300d-fd18-42eb-bbf3-198d28f30ffb
+		sourceLineageTag: yard
+		summarizeBy: none
+		sourceColumn: yard
+
+		annotation SummarizationSetBy = Automatic
+
+	column series_url
+		dataType: string
+		lineageTag: 20fb8578-511d-4c6e-b7a2-99f7d5bd955f
+		sourceLineageTag: series_url
+		summarizeBy: none
+		sourceColumn: series_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column url
+		dataType: string
+		lineageTag: 0511050d-a59c-486a-b9d7-9dad607f2063
+		sourceLineageTag: url
+		summarizeBy: none
+		sourceColumn: url
+
+		annotation SummarizationSetBy = Automatic
+
+	column scrape_run_id
+		dataType: string
+		lineageTag: a72052b3-e8ff-4d0b-845a-d8c446d10b5b
+		sourceLineageTag: scrape_run_id
+		summarizeBy: none
+		sourceColumn: scrape_run_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column vehicle_ref
+		dataType: string
+		lineageTag: e9dbfdec-4e8a-4058-98e4-e6ff20b3ba0d
+		sourceLineageTag: vehicle_ref
+		summarizeBy: none
+		sourceColumn: vehicle_ref
+
+		annotation SummarizationSetBy = Automatic
+
+	column acq
+		dataType: string
+		lineageTag: cc1f18ae-4361-4e96-aec1-c0d212b8e754
+		sourceLineageTag: acq
+		summarizeBy: none
+		sourceColumn: acq
+
+		annotation SummarizationSetBy = Automatic
+
+	column yard_location
+		dataType: string
+		lineageTag: 30d2c40e-7853-4f6b-b93c-52b4fb0a75f8
+		sourceLineageTag: yard_location
+		summarizeBy: none
+		sourceColumn: yard_location
+
+		annotation SummarizationSetBy = Automatic
+
+	column make_model
+		dataType: string
+		lineageTag: b714e93c-7965-4d2a-8c6b-ccbc41db1393
+		sourceLineageTag: make_model
+		summarizeBy: none
+		sourceColumn: make_model
+
+		annotation SummarizationSetBy = Automatic
+
+	column engine
+		dataType: string
+		lineageTag: 2b984263-cc07-46e8-bc9d-308c970ffb8c
+		sourceLineageTag: engine
+		summarizeBy: none
+		sourceColumn: engine
+
+		annotation SummarizationSetBy = Automatic
+
+	column transmission
+		dataType: string
+		lineageTag: ee517683-391b-4c46-961e-1d3476823b6e
+		sourceLineageTag: transmission
+		summarizeBy: none
+		sourceColumn: transmission
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 64d48cde-cbd4-4722-9071-5a051a336f3b
+		sourceLineageTag: year
+		summarizeBy: sum
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column odometer
+		dataType: int64
+		formatString: 0
+		lineageTag: 0beba746-209f-4420-b165-8b7fe9f3e0a5
+		sourceLineageTag: odometer
+		summarizeBy: sum
+		sourceColumn: odometer
+
+		annotation SummarizationSetBy = Automatic
+
+	column arrival_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 0112d8df-f196-4b35-937a-d74dc6c417f4
+		sourceLineageTag: arrival_date
+		summarizeBy: none
+		sourceColumn: arrival_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column scraped_at
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: b149a26d-a706-4b2b-b1bc-77a6be5e6e87
+		sourceLineageTag: scraped_at
+		summarizeBy: none
+		sourceColumn: scraped_at
+
+		annotation SummarizationSetBy = Automatic
+
+	column scraped_at_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 018710bb-780f-485a-8ad5-6e8937ecc566
+		sourceLineageTag: scraped_at_date
+		summarizeBy: none
+		sourceColumn: scraped_at_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column part_name
+		dataType: string
+		lineageTag: 14ac419f-5b54-4fee-a03e-881dd2c7e74b
+		sourceLineageTag: part_name
+		summarizeBy: none
+		sourceColumn: part_name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vehicles_with_parts = entity
+		mode: directLake
+		source
+			entityName: vehicles_with_parts
+			expressionSource: 'DirectLake - pick_a_part'
+

@@ -1,0 +1,15 @@
+relationship 6d442012-2463-4545-93ac-b7df4530f491
+	joinOnDateBehavior: datePartOnly
+	fromColumn: vehicles_with_parts.arrival_date
+	toColumn: LocalDateTable_81aaf2f1-458a-4f42-afe7-3462ea163b1e.Date
+
+relationship ee1dd388-3242-470a-99fe-1263abf6557b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: vehicles_with_parts.scraped_at
+	toColumn: LocalDateTable_84ba106b-6534-4bd6-934d-405d94da18e8.Date
+
+relationship 7a2a6f1c-b60c-4b77-8ab0-863a9967d5b2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: vehicles_with_parts.scraped_at_date
+	toColumn: LocalDateTable_936e313a-be66-45a0-9626-6d73153e0b3a.Date
+
