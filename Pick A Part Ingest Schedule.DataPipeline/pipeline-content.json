@@ -1,0 +1,21 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "TridentNotebook",
+        "typeProperties": {
+          "notebookId": "e587b11a-c311-975b-46c2-3f5667ffe014",
+          "workspaceId": "00000000-0000-0000-0000-000000000000"
+        },
+        "policy": {
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "Picka A Part Source",
+        "dependsOn": []
+      }
+    ]
+  }
+}
